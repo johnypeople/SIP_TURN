@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.10)
+project(sip_project)
+
+set(CMAKE_CXX_STANDARD 11)
+
+# Localização da biblioteca cpprestsdk
+find_package(cpprestsdk REQUIRED)
+
+# Inclui diretórios
+include_directories(include)
+
+# Adiciona os arquivos fonte
+add_executable(sip_server main.cpp src/SIPMessage.cpp src/STUN.cpp src/Server.cpp)
+
+# Liga a biblioteca cpprestsdk
+target_link_libraries(sip_server PRIVATE cpprest)
