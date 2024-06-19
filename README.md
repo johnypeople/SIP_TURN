@@ -58,6 +58,7 @@ curl "http://localhost:8080?address=privateAddress"
 ```sh
 mkdir build
 cd build
+```
 
 Configure o CMake:
 
@@ -72,7 +73,7 @@ Execute o servidor:
 ./sip_server
 
 
-5. Testar a API REST
+## 5. Testar a API REST
 
 Use curl para testar a API REST do servidor.
 
