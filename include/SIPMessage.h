@@ -9,7 +9,7 @@ class SIPMessage {
         std::string getType() const; 
         std::string getFrom() const; 
         std::string getTo() const;
-        std::string getString() const;
+        std::string toString() const;
         
     
     private:
